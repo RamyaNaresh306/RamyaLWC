@@ -1,0 +1,25 @@
+<template>
+    <template if:true={openprogind}>
+         <c-progbar stepval = {progstepval}></c-progbar>   
+    </template>
+    
+    <template if:true={openstudind}>
+        <c-student onstud = {studchgval}></c-student> 
+    </template>
+  
+    <template if:true={openconind}>
+        <c-contact oncon = {conchgval} ></c-contact>
+    </template>
+
+    <template if:true={opencourind}>
+         <c-course oncour = {courchgval}></c-course>
+    </template>
+
+    <template if:true={openpayind}>
+        <c-payment onpay = {paychgval} ></c-payment>
+    </template>
+
+    <template if:true={openrevind}>
+        <c-review onrev = {revchgval} stud = {studrec} cont = {conrec1} cour = {courrec1}  pay = {payrec1}></c-review> 
+    </template>
+</template>

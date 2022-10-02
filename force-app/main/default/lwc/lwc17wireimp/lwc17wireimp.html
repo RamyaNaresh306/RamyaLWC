@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Wire Imperatively">
+        <lightning-input label="Firstname" name="fname" onchange={getevent}></lightning-input>
+        <lightning-input label="Lastname" name="lname" onchange={getevent}></lightning-input>
+        <lightning-input label="Email" name="email" onchange={getevent}></lightning-input>
+        <br/>
+        <lightning-button label="Create Contact" variant="brand" onclick={createcontact}></lightning-button>
+        The record is {recordId}
+    </lightning-card>
+</template>

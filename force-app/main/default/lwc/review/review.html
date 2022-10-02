@@ -1,0 +1,160 @@
+<template>
+    <h1 style="text-align:center " >
+        <font size = "5">Review Student Details</font>
+    </h1>
+    
+    <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+        <lightning-accordion-section label="Student Details">
+            <lightning-record-view-form object-api-name="Student_Details__c" record-id={stud}>
+                <div class = "slds-grid slds-wrap" style="background-color:White;">     
+                    <div class="slds-size_1-of-2 slds-text-align_left ">
+                        <lightning-output-field field-name={firstname}></lightning-output-field>
+                    </div>  
+                    <div class="slds-size_1-of-2 slds-text-align_left "> 
+                        <lightning-output-field field-name={middlename}></lightning-output-field>
+                    </div> 
+                    <div class="slds-size_1-of-2 slds-text-align_left ">
+                        <lightning-output-field field-name={lastname}></lightning-output-field>
+                    </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={DOB}></lightning-output-field>
+                   </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={gender}></lightning-output-field>
+                   </div>                  
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={doctyp}></lightning-output-field>
+                  </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={docnum}></lightning-output-field>
+                  </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={confirdoc}></lightning-output-field>
+                  </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={ugpercent}></lightning-output-field>
+                  </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                       <lightning-output-field field-name={univ}></lightning-output-field>
+                  </div>
+                  <div class="slds-size_1-of-2 slds-text-align_left ">
+                        <lightning-output-field field-name={yearofgrad}></lightning-output-field>
+                   </div>
+                </div>
+            </lightning-record-view-form>
+       </lightning-accordion-section>
+       <lightning-accordion-section label="Contact Details">
+        <lightning-record-view-form object-api-name="Contact_Details__c" record-id={cont}>
+            <div class = "slds-grid slds-wrap" style="background-color:White;">     
+                <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={phone}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={email}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={add1}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={add2}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                   <lightning-output-field field-name={zipcode}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={city}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={county}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={country}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={state}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={faxnum}></lightning-output-field>
+               </div>
+            </div>
+        </lightning-record-view-form>
+    </lightning-accordion-section>
+    <lightning-accordion-section label="Course Details">
+        <lightning-record-view-form object-api-name="Course_Details__c" record-id={cour}>
+            <div class = "slds-grid slds-wrap" style="background-color:White;">     
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={cournam}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={courid}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={courstdat}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={courenddat}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={courfee}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={yrofexp}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={clientnam}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={compcour}></lightning-output-field>
+               </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+                  <lightning-output-field field-name={addcom}></lightning-output-field> 
+               </div>
+            </div>             
+        </lightning-record-view-form>
+    </lightning-accordion-section>
+    <lightning-accordion-section label="Payment Details">
+        <lightning-record-view-form object-api-name="Payment_Details__c" record-id={pay}>
+            <div class = "slds-grid slds-wrap" style="background-color:White;">     
+                <div class="slds-size_1-of-2 slds-text-align_left ">
+                   <lightning-output-field field-name={paymeth}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={paytyp}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={firtnam}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={lastnam}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={cardnum}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={recardnum}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={expdate}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={cvv}></lightning-output-field>
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">
+              <lightning-output-field field-name={totamt}></lightning-output-field> 
+              </div>
+              <div class="slds-size_1-of-2 slds-text-align_left ">  
+              <lightning-output-field field-name={billadd}></lightning-output-field> 
+              </div>   
+            </div>       
+        </lightning-record-view-form>
+    </lightning-accordion-section>
+    </lightning-accordion>
+    <hr style="border-top: 3px solid #095484;">  
+    <div class="f-l">
+        <lightning-button  label = "Exit Student Form" variant="brand" onclick={navigateToObjectHome}></lightning-button>
+    </div>
+    <div class="f-r"> 
+        <lightning-button  label="Previous" variant="brand" onclick={gotostud} ></lightning-button>      
+    </div>
+
+</template>

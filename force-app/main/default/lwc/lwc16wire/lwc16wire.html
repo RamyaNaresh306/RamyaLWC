@@ -1,0 +1,11 @@
+<template>
+    <div style="height: 300px;">
+        
+        <lightning-datatable
+                key-field="Id"
+                data={cons.data}
+                columns={columns}>
+        </lightning-datatable>
+ </div>
+ <lightning-button label="Check life cycle hook" onclick={checklifecycel}></lightning-button>
+</template>

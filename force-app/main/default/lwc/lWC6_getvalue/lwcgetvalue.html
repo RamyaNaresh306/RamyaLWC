@@ -1,0 +1,15 @@
+<template>
+    <lightning-card> 
+        <lightning-layout>
+            <lightning-layout-item size="3">
+                <lightning-input  label="Enter name"  name="ename"  value={empname} onchange={getval}></lightning-input>
+                <lightning-input  label="Enter address"  name="eaddr" value={empaddr} onchange={getval} ></lightning-input>
+                <lightning-input  label="Enter Salary"  name="esal"  value={empsal} onchange={getval}></lightning-input>
+            
+            </lightning-layout-item>
+        </lightning-layout>
+        Employee bonus is {empbonus} <br>
+        <lightning-button label="calculate bonus" variant ="brand" onclick={calcbonus} > </lightning-button>
+        
+    </lightning-card>
+</template>

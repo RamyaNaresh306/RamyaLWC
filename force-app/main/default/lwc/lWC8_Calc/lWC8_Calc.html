@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Calculator">
+        <lightning-input label="Enter First Number" name="n1" value={num1} onchange={getval} ></lightning-input>
+        <lightning-input label="Enter Second Number" name="n2" value={num2} onchange={getval} ></lightning-input>
+        <lightning-button label="Add" onclick={CalcAdd}> </lightning-button>
+        Sum of two number {res}
+    </lightning-card>
+    
+</template>

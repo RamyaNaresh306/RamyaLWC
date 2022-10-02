@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Subscriber Component">
+        
+        <lightning-button label="Subscribe" variant="brand" onclick={subscribemc} disabled={isDisabled}>  </lightning-button>
+        <lightning-button label="UnSubscribe" variant="brand" onclick={unsubscribemc} disabled={isDisabledUnsb}></lightning-button>
+        <textarea id="receivedMessageTextArea" style="width: 435px;height: 200px;"
+        class="textareaReceivedMessage" rows="7"  disabled > {receivedMessage}|</textarea>
+
+    </lightning-card>
+</template>

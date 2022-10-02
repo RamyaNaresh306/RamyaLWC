@@ -1,0 +1,54 @@
+<template>
+      <div class = "slds-grid slds-wrap">     
+         <div class="slds-size_1-of-2 slds-text-align_left">
+            <lightning-combobox  label="Payment Method" value={value} placeholder="Select Payment Method"  options={options} required
+                          onchange={handlechange}   class="slds-m-around_x-small"></lightning-combobox>
+         </div>
+         <div class="slds-size_1-of-2 slds-text-align_left">
+            <lightning-combobox  label="Payment Type" value={value} placeholder="Select Payment Type"  options={option1} required
+                          onchange={handlechange}   class="slds-m-around_x-small"></lightning-combobox>
+         </div>
+          <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="First Name" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div> 
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+         <lightning-input  label="Last Name" onchange={handlechange} required
+                                            class="slds-m-around_x-small"></lightning-input>                                                     
+     </div> 
+    <div class="slds-size_1-of-2 slds-text-align_left">                
+      <lightning-input  label="Card Number" onchange={handlechange} required
+                                         class="slds-m-around_x-small"></lightning-input>                                                     
+      </div> 
+      <div class="slds-size_1-of-2 slds-text-align_left">                
+          <lightning-input  label="Re Enter Card Number" onchange={handlechange} required
+                                      class="slds-m-around_x-small"></lightning-input>                                                     
+      </div> 
+      <div class="slds-size_1-of-2 slds-text-align_left">
+          <lightning-input type="date" label="Expiry Date" onchange={handlechange} required
+                                       class="slds-m-around_x-small"></lightning-input> 
+      </div>
+      <div class="slds-size_1-of-2 slds-text-align_left">                
+         <lightning-input  label="CVV" onchange={handlechange} required
+                                            class="slds-m-around_x-small"></lightning-input>                                                     
+     </div> 
+     <div class="slds-size_1-of-2 slds-text-align_left">                
+           <lightning-input  label="Total Amount" type ="number" formatter = "currency" onchange={handlechange} required
+                                         class="slds-m-around_x-small"></lightning-input>                                                     
+     </div> 
+     <div class="slds-size_1-of-2 slds-text-align_left">                
+         <lightning-input  label="Billing Address" onchange={handlechange} required
+                                      class="slds-m-around_x-small"></lightning-input>                                                     
+      </div> 
+
+      </div>
+      <hr style="border-top: 3px solid #095484;">  
+    <div class="f-l">
+        <lightning-button  label = "Exit Student Form" variant="brand" onclick={navigateToObjectHome}></lightning-button>
+    </div>
+    <div class="f-r">         
+         <lightning-button  label="Previous" variant="brand" onclick={gotostud} ></lightning-button>      
+         &nbsp;&nbsp;&nbsp;&nbsp;       
+        <lightning-button  label="Save and Next" variant="brand" onclick={createrec} ></lightning-button>
+    </div> 
+</template>

@@ -1,0 +1,55 @@
+<template>
+    <div class = "slds-grid slds-wrap">     
+        <div class="slds-size_1-of-2 slds-text-align_left ">         
+                <lightning-input  label="Phone Number"  onchange={handlechange} required
+                                                      class="slds-m-around_x-small"  ></lightning-input>               
+        </div>
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Email ID" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div>  
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Address Line 1" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div> 
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Address Line 2" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div>    
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Zipcode" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div>  
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-combobox  label="City" value={value} placeholder="Select City"  options={options} required
+                          onchange={handlechange}   class="slds-m-around_x-small"></lightning-combobox>                                                     
+        </div>  
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-combobox  label="County" value={value} placeholder="Select County"  options={option1} required
+            onchange={handlechange}  class="slds-m-around_x-small"></lightning-combobox>                                                     
+        </div>       
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-combobox  label="State" value={value} placeholder="Select County"  options={option2} required
+            onchange={handlechange}  class="slds-m-around_x-small"></lightning-combobox>                                                     
+        </div>    
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-combobox  label="Country" value={value} placeholder="Select County"  options={option3} required
+            onchange={handlechange}  class="slds-m-around_x-small"></lightning-combobox>                                                     
+        </div>   
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Fax Number" onchange={handlechange} required
+                                               class="slds-m-around_x-small"></lightning-input>                                                     
+        </div>   
+
+    </div>  
+    <hr style="border-top: 3px solid #095484;">  
+    <div class="f-l">
+        <lightning-button  label = "Exit Student Form" variant="brand" onclick={navigateToObjectHome}></lightning-button>
+    </div>
+    <div class="f-r">  
+             <lightning-button  label="Previous" variant="brand" onclick={gotostud} ></lightning-button>      
+             &nbsp;&nbsp;&nbsp;&nbsp;       
+            <lightning-button  label="Save and Next" variant="brand" onclick={createrec} ></lightning-button>
+    </div>
+          
+</template>

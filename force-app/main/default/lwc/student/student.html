@@ -1,0 +1,64 @@
+<template>
+      
+    <div class = "slds-grid slds-wrap">     
+        <div class="slds-size_1-of-2 slds-text-align_left ">         
+                <lightning-input  label="First Name"  onchange={handlechange} required
+                                                      class="slds-m-around_x-small"  ></lightning-input>               
+        </div>
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+                <lightning-input  label="Middle Name" onchange={handlechange}
+                                                   class="slds-m-around_x-small"></lightning-input>                                                     
+        </div>                                        
+        <div class="slds-size_1-of-2 slds-text-align_left">                   
+                <lightning-input  label="Last Name" onchange={handlechange} required
+                                                    class="slds-m-around_x-small"></lightning-input>
+                                                
+        </div> 
+       <div class="slds-size_1-of-2 slds-text-align_left">
+                <lightning-input type="date" label="Date of Birth" onchange={handlechange} required
+                                                    class="slds-m-around_x-small"></lightning-input> 
+        </div>   
+       <div class="slds-size_1-of-2 slds-text-align_left">   
+        <lightning-combobox label="Gender" value={value} placeholder="Select Gender" options={options} required
+                                             onchange={handlechange} ></lightning-combobox>
+        </div>
+        
+       <div class="slds-size_1-of-2 slds-text-align_left">  
+        <lightning-combobox label="Document Type" value={value} placeholder="Select Type" options={option1} required
+            onchange={handlechange} ></lightning-combobox>  
+                 
+        </div>      
+        <div class="slds-size_1-of-2 slds-text-align_left">                 
+                <lightning-input label="Document Number" onchange={handlechange} required
+                                                    class="slds-m-around_x-small"></lightning-input>
+        </div> 
+        <div class="slds-size_1-of-2 slds-text-align_left" >
+                <lightning-input label="Confirm Document Number" onchange={handlechange} required
+                                                    class="slds-m-around_x-small"></lightning-input>
+        </div>        
+        <div class="slds-size_1-of-2 slds-text-align_left">                   
+                <lightning-input formatter="percent-fixed" label="UG Percentage" onchange={handlechange} required
+                                                   class="slds-m-around_x-small"></lightning-input>
+        </div>
+        <div class="slds-size_1-of-2 slds-text-align_left">
+                <lightning-input label="University Name" onchange={handlechange} required
+                                                   class="slds-m-around_x-small"></lightning-input>
+        </div>        
+        <div class="slds-size_1-of-2 slds-text-align_left">                
+            <lightning-input  label="Year of Graduation" onchange={handlechange} required
+            class="slds-m-bottom_x-small"></lightning-input>
+        </div>  
+         
+    </div>   
+
+    <hr style="border-top: 3px solid #095484;">  
+    <div class="f-l">
+        <lightning-button  label = "Exit Student Form" variant="brand" onclick={navigateToObjectHome}></lightning-button>
+    </div>
+    <div class="f-r">            
+        <lightning-button  label="Save and Next" variant="brand" onclick={createrec} ></lightning-button> 
+    </div>          
+    
+    
+    
+</template>
