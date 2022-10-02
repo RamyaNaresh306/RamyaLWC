@@ -6,3 +6,5 @@ F
 G
 lwc
 Hello - Welcome to commit from repository
+
+hi hello from local
